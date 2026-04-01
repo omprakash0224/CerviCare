@@ -56,8 +56,16 @@ export default function PredictionForm() {
     }));
   };
 
-  const nextStep = () => setStep((s) => Math.min(s + 1, 4));
-  const prevStep = () => setStep((s) => Math.max(s - 1, 1));
+  const nextStep = (e) => {
+    e?.preventDefault();
+    e?.stopPropagation();
+    setStep((s) => Math.min(s + 1, 4));
+  };
+  const prevStep = (e) => {
+    e?.preventDefault();
+    e?.stopPropagation();
+    setStep((s) => Math.max(s - 1, 1));
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -354,7 +362,7 @@ export default function PredictionForm() {
         <div className="mt-8 flex items-center justify-between">
           <button
             type="button"
-            onClick={prevStep}
+            onClick={(e) => prevStep(e)}
             disabled={step === 1}
             className={`
               px-6 py-2.5 rounded-xl text-sm font-medium
@@ -372,7 +380,7 @@ export default function PredictionForm() {
           {step < 4 ? (
             <button
               type="button"
-              onClick={nextStep}
+              onClick={(e) => nextStep(e)}
               className="
                 px-6 py-2.5 rounded-xl text-sm font-semibold
                 bg-gradient-to-r from-primary-600 to-accent-600
