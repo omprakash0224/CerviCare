@@ -22,7 +22,7 @@ function App() {
               <h1 className="text-lg font-bold text-white tracking-tight">
                 Cervi<span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">Care</span>
               </h1>
-              <p className="text-xs text-surface-500 font-medium">Cervical Cancer Risk Assessment</p>
+              <p className="text-xs text-surface-400 font-medium">Cervical Cancer Risk Assessment</p>
             </div>
           </div>
 
@@ -61,7 +61,7 @@ function App() {
 
       {/* Footer */}
       <footer className="relative border-t border-surface-800/50 py-6 text-center">
-        <p className="text-xs text-surface-600">
+        <p className="text-xs text-white">
           CerviCare © {new Date().getFullYear()} — For educational purposes only. Not a substitute for medical advice.
         </p>
       </footer>
