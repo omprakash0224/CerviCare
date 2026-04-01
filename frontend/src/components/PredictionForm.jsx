@@ -3,7 +3,7 @@ import FormStepper from './FormStepper';
 import FormField, { ToggleField } from './FormField';
 import ResultCard from './ResultCard';
 
-const API_URL = 'http://localhost:8000';
+const API_URL = import.meta.env.VITE_API_URL;
 
 const initialFormData = {
   age: '',
