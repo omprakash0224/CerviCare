@@ -41,7 +41,7 @@ The ML pipeline trains and evaluates **12 model families** — including classic
 
 ---
 
-## Architecture
+## Folder Structure
 
 ```
 cervicare/
