@@ -41,6 +41,9 @@ The ML pipeline trains and evaluates **12 model families** — including classic
 
 ---
 
+## Architecture
+<img src="docs/architecture.png" alt="Architecture Diagram" />
+
 ## Folder Structure
 
 ```
