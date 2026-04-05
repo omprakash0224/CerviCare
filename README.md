@@ -27,6 +27,8 @@
 
 The ML pipeline trains and evaluates **12 model families** — including classical models, tree-based ensembles (XGBoost, LightGBM), a neural network, soft-voting, and stacking classifiers — on the [UCI Cervical Cancer Risk Factors dataset](https://archive.ics.uci.edu/dataset/383/cervical+cancer+risk+factors) (858 samples × 36 features). The deployed model is a **soft-voting ensemble** of Random Forest, XGBoost, and LightGBM.
 
+Try out Live at:- https://cervi-care-theta.vercel.app/
+
 ---
 
 ## Features
